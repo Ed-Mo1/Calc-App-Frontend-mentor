@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+* {
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+@layer utilities {
+  .theme-1-btn {
+    @apply text-theme-1-text-dark max-sm:text-[16px]  text-[33px] shadow-[0px_7px_0px] shadow-theme-1-grayish-orange bg-theme-1-light-grayish-orange font-bold rounded-xl py-3 px-4 hover:bg-theme-1-white;
+  }
+  .theme-1-clear-del-btn {
+    @apply break-words text-theme-1-white bg-theme-1-key-background shadow-[0px_7px_0px] shadow-theme-1-key-shadow max-sm:text-[16px]  text-[33px] font-bold rounded-xl py-3 px-4 hover:bg-[#a3b3e1];
+  }
+  .theme-1-evaluate-btn {
+    @apply shadow-[0px_7px_0px] shadow-theme-1-dark-red
+    text-theme-1-white bg-theme-1-red max-sm:text-[16px]  text-[33px] hover:bg-[#fb6251] font-bold rounded-xl py-3 px-4 
+  col-span-2;
+  }
+  .theme-1-toggle-btn {
+    @apply bg-theme-1-red;
+  }
+  .theme-2-btn {
+    @apply text-theme-2-text-dark max-sm:text-[16px]  text-[33px] shadow-[0px_7px_0px] shadow-theme-2-dark-grayish-orange hover:bg-white bg-theme-2-light-grayish-yellow font-bold rounded-xl py-3 px-4;
+  }
+  .theme-2-clear-del-btn {
+    @apply break-words bg-theme-2-key-background shadow-[0px_7px_0px] shadow-theme-2-key-shadow max-sm:text-[16px]  text-[33px] text-white font-bold rounded-xl py-3 px-4 hover:bg-[#61b5bd];
+  }
+  .theme-2-evaluate-btn {
+    @apply bg-theme-2-orange text-white shadow-[0px_7px_0px] shadow-theme-2-dark-orange  max-sm:text-[16px]  text-[33px] hover:bg-[#ff8b38] font-bold rounded-xl py-3 px-4 col-span-2;
+  }
+  .theme-2-toggle-btn {
+    @apply bg-theme-2-orange;
+  }
+  .theme-3-btn {
+    @apply text-theme-3-text-light max-sm:text-[16px]  text-[33px] shadow-[0px_7px_0px] bg-[#341c4f] hover:bg-[#6a34ad] shadow-theme-3-dark-magenta font-bold rounded-xl py-3 px-4;
+  }
+  .theme-3-clear-del-btn {
+    @apply break-words bg-theme-3-key-background shadow-[0px_7px_0px] shadow-theme-3-key-shadow max-sm:text-[16px]  text-[33px] text-theme-3-text-light font-bold rounded-xl py-3 px-4 hover:bg-[#8531af];
+  }
+  .theme-3-evaluate-btn {
+    @apply bg-theme-3-cyan text-theme-3-text-very-dark-blue shadow-[0px_7px_0px] shadow-theme-3-soft-cyan  max-sm:text-[16px]  text-[33px] font-bold rounded-xl py-3 px-4 col-span-2;
+  }
+  .theme-3-toggle-btn {
+    @apply bg-theme-3-cyan;
+  }
+}
