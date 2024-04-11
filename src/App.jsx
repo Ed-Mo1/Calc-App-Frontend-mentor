@@ -153,7 +153,7 @@ const App = () => {
       <div className="w-full max-w-[600px] flex flex-col gap-8">
         <Header theme={theme} setTheme={setTheme} />
         <div
-          className={`min-h-[140px] grid place-content-end shadow-sm ${
+          className={`min-h-[140px] break-all  grid place-content-end shadow-sm ${
             theme === "theme-1"
               ? "bg-theme-1-screen-background text-theme-1-white"
               : theme === "theme-2"
